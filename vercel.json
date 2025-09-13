@@ -8,10 +8,17 @@
     { "src": "assets/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { 
-      "src": "/(.*\\.(css|js|json|png|jpg|jpeg|svg|gif|mp4|webm|mov))", 
-      "dest": "/$1" 
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
     },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*\\.(css|js|json|png|jpg|jpeg|svg|gif|mp4|webm|mov))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
