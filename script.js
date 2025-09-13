@@ -9,41 +9,35 @@ for (let i = 0; i < acc.length; i++) {
         panel.classList.toggle("active");
     });
 }
-
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/files/users.json")
+    fetch("./users.json")
         .then(res => res.json())
         .then(data => {
-            let user = data[window.location.host];
-            if (!user) return;
+            let host = window.location.host.replace(/^www\./, ""); // normalize www.
+            let user = data[host];
+
+            if (!user) {
+                console.log("No user found, showing base template.");
+                return; // keep base template
+            }
 
             for (let id in user) {
                 let el = document.getElementById(id);
                 if (!el) continue;
 
-                // Hero box background
                 if (id === "hero-user-image") {
                     el.style.backgroundImage = `url(${user[id]})`;
                     el.style.backgroundSize = "cover";
                     el.style.backgroundPosition = "center";
-                }
-
-                // Normal <img> tags
-                else if (el.tagName === "IMG") {
+                } else if (el.tagName === "IMG") {
                     el.src = user[id];
-                }
-
-                // Icons <i>
-                else if (el.tagName === "I") {
-                    el.className = user[id]; // replace classes with json value
-                }
-
-                // Text/HTML content
-                else {
+                } else if (el.tagName === "I") {
+                    el.className = user[id];
+                } else {
                     if (user[id].includes("<span>")) {
-                        el.innerHTML = user[id]; // allow inline HTML
+                        el.innerHTML = user[id];
                     } else {
-                        el.textContent = user[id]; // plain text
+                        el.textContent = user[id];
                     }
                 }
             }
