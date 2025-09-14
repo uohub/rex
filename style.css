@@ -93,33 +93,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Background Video */
-.bg-video {
-    position: fixed;
-    /* stays in the background */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* covers entire screen without stretching */
-    z-index: -2;
-    /* behind everything */
-}
-
-/* Optional dark overlay for readability */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    /* adjust darkness */
-    z-index: -1;
-    /* above video, below content */
-}
-
 /* Make sure your content appears above */
 /* section {
     position: relative;
@@ -132,6 +105,7 @@ body {
 #header {
     width: 100%;
     height: auto;
+    background: linear-gradient(90deg, black, rgb(65, 53, 53), black);
 }
 
 .container {
@@ -447,36 +421,39 @@ main {
 
 /* Slide Left */
 .slide-left {
-  animation: slideLeft 1s ease both;
-  animation-timeline: view(70% 5%);
+    animation: slideLeft 1s ease both;
+    animation-timeline: view(70% 5%);
 }
 
 /* Slide Right */
 .slide-right {
-  animation: slideRight 1s ease both;
-  animation-timeline: view(70% 5%);
+    animation: slideRight 1s ease both;
+    animation-timeline: view(70% 5%);
 }
 
 /* Slide Bottom */
 .slide-bottom {
-  animation: slideBottom 1s ease both;
-  animation-timeline: view(70% 5%);
+    animation: slideBottom 1s ease both;
+    animation-timeline: view(70% 5%);
 }
 
 /* Slide Top */
 .slide-top {
-  animation: slideTop 1s ease both;
-  animation-timeline: view(70% 5%);
+    animation: slideTop 1s ease both;
+    animation-timeline: view(70% 5%);
 }
 
 /* -----------hero----------- */
 .main-hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px 6%;
+    padding: 10px 6% 100px 6%;
     min-height: 280px;
     align-items: stretch;
     gap: 20px;
+    object-fit: cover;
+    background-position: center center;
+    background: linear-gradient(90deg, black, rgb(65, 53, 53), black);
 }
 
 .hero-carear {
@@ -568,7 +545,7 @@ main {
     margin-top: 2rem;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     animation: animate 5s ease-in-out infinite;
-    box-shadow: 0 0px 18px 18px rgba(250, 178, 237, 0.5);
+    box-shadow: 0 0px 18px 18px rgba(241, 234, 240, 0.5);
     transition: all 1s ease-in-out;
     margin-left: 70px;
 }
@@ -706,11 +683,12 @@ main {
 
 /* --------About me section start */
 #about-me {
-    margin-top: 150px;
+    background: linear-gradient(90deg, black, rgb(71, 54, 66), black);
     padding: 10px 6%;
 }
 
 .about-us-main {
+    margin-top: 100px;
     background: rgba(255, 255, 255, 0.1);
     /* transparent background overlay */
     backdrop-filter: blur(10px);
@@ -868,18 +846,21 @@ main {
 /* --------About me section end */
 /* --------why - column--------- */
 #why-column {
-    margin-top: 200px;
+    background: linear-gradient(90deg, black, rgb(71, 54, 66), black);
     padding: 10px 12%;
 }
 
 .why-column-text {
     display: flex;
+
+    margin-top: 140px;
     justify-content: center;
     font-size: var(--font-size-large);
     margin-bottom: 30px;
 }
 
 .section-cards {
+    margin-bottom: 140px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1%;
@@ -899,12 +880,16 @@ main {
 .section-card:hover {
     transform: translateY(-7px);
 }
+
 .section-card .icon {
-    width: 60px;      /* same as your old font-size */
+    width: 60px;
+    /* same as your old font-size */
     height: 60px;
     display: block;
-    margin: 0 auto 20px auto; /* centers the icon and keeps bottom spacing */
-    filter: invert(1); /* makes icon white if SVG is black */
+    margin: 0 auto 20px auto;
+    /* centers the icon and keeps bottom spacing */
+    filter: invert(1);
+    /* makes icon white if SVG is black */
 }
 
 .section-card h4 {
@@ -931,13 +916,14 @@ main {
 /* -------Project section--------- */
 #my-projects {
     padding: 10px 8%;
-    margin-top: 130px;
     background: rgba(255, 255, 255, 0.1);
     /* transparent background overlay */
     backdrop-filter: blur(10px);
     /* main blur effect */
     -webkit-backdrop-filter: blur(10px);
     /* Safari support */
+    background: linear-gradient(90deg, black, rgb(54, 67, 71), black);
+
 
 }
 
@@ -954,6 +940,7 @@ main {
     justify-content: center;
     font-size: var(--font-size-largest);
     padding: 20px 0;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 
@@ -1021,6 +1008,8 @@ main {
     -webkit-backdrop-filter: blur(10px);
     /* Safari support */
     padding: 10px 8%;
+    background: linear-gradient(90deg, black, rgb(71, 71, 54), black);
+
 }
 
 .case-study-heading {
@@ -1119,7 +1108,9 @@ main {
 
 /* <!-- ------------Testimonials ------------> */
 #testimonials {
-    padding: 10px 12%;
+    padding: 10px 12% 100px 12%;
+    background: linear-gradient(90deg, black, rgb(71, 54, 54), black);
+
 }
 
 .testimonial-text h1 {
@@ -1199,7 +1190,9 @@ blockquote p {
 
 /* <!-- ------------FAQS ------------> */
 #faq {
-    padding: 10px 19%;
+    padding: 10px 19% 100px 19%;
+    background: linear-gradient(90deg, black, rgb(64, 8, 78), black);
+
 }
 
 .faq-heading {
@@ -1246,13 +1239,20 @@ blockquote p {
     display: none;
     transition: .4s ease;
 }
+
 .faq-chevron {
-    width: 30px;              /* adjust size */
-    height: auto;             /* keeps proportion */
-    margin-left: 10px;        /* spacing from text */
-    transition: transform 0.3s ease; /* smooth rotation */
-    pointer-events: none;     /* so clicks go through */
-    vertical-align: middle;   /* align with text */
+    width: 30px;
+    /* adjust size */
+    height: auto;
+    /* keeps proportion */
+    margin-left: 10px;
+    /* spacing from text */
+    transition: transform 0.3s ease;
+    /* smooth rotation */
+    pointer-events: none;
+    /* so clicks go through */
+    vertical-align: middle;
+    /* align with text */
     filter: invert(1);
 }
 
@@ -1283,6 +1283,8 @@ blockquote p {
 
 #final-cta {
     padding: 8px 14%;
+    background: linear-gradient(90deg, black, rgb(78, 8, 47), black);
+
 }
 
 #final-cta h3 {
@@ -1323,7 +1325,8 @@ blockquote p {
     /* Low height */
     color: #fff;
     display: flex;
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(90deg, black, rgb(5, 46, 42), black);
+
     /* transparent background overlay */
     backdrop-filter: blur(10px);
     /* main blur effect */
@@ -1359,7 +1362,7 @@ blockquote p {
 .right-text a {
     color: #98e79e;
     text-decoration: none;
-    
+
 }
 
 .right-text a:hover {
