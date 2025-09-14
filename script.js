@@ -1,9 +1,4 @@
-// Delay video load until after page render (LCP fix)
-window.addEventListener("load", () => {
-  const videoSource = document.querySelector(".bg-video source");
-  videoSource.src = "./assets/background-vd.mp4"; // ✅ relative path
-  videoSource.parentElement.load();
-});
+
 
 var acc = document.getElementsByClassName("according");
 for (let i = 0; i < acc.length; i++) {
