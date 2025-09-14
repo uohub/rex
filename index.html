@@ -5,24 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="query.css">
-    
+
 </head>
 
 <body>
 
 
 
-    <!-- Background Video -->
-    <video class="bg-video" autoplay muted loop playsinline>
-        <source src="/assets/background-vd.mp4" type="video/mp4">
-        Your browser does not support video tag.
+    <!-- Background Video with poster for instant LCP -->
+    <video class="bg-video" autoplay muted loop playsinline preload="none" poster="/assets/background-preview.webp">
+        <source src="" type="video/mp4"> <!-- Empty at first -->
+        Your browser does not support the video tag.
     </video>
+
     <div class="overlay"></div>
 
     <header id="header">
@@ -47,12 +44,12 @@
                             <div class="button__reflection-2"></div>
                         </div>
 
-                        <img src="/assets/star.png" alt="" class="button__star-1">
-                        <img src="/assets/star.png" alt="" class="button__star-2">
-                        <img src="/assets/circle.png" alt="" class="button__circle-1">
-                        <img src="/assets/circle.png" alt="" class="button__circle-2">
-                        <img src="/assets/triangle.png" alt="" class="button__diamond">
-                        <img src="/assets/diamond.png" alt="" class="button__triangle">
+                        <img src="/assets/star.png" alt="slr" class="button__star-1">
+                        <img src="/assets/star.png" alt="slr" class="button__star-2">
+                        <img src="/assets/circle.png" alt="slr" class="button__circle-1">
+                        <img src="/assets/circle.png" alt="slr" class="button__circle-2">
+                        <img src="/assets/triangle.png" alt="slr" class="button__diamond">
+                        <img src="/assets/diamond.png" alt="slr" class="button__triangle">
 
                         <div class="button__shadow"></div>
                     </a>
@@ -69,10 +66,12 @@
             <h1 class="hero-subhead">Hi, I'm</h1>
             <h2 class="hero-name" id="hero-user-name"><span>Jack</span> Ronald</h2>
             <div class="hero-ps">
-                <p class="hero-p-1" id="hero-user-p-tag-1">I help coaches, creators, and business owners turn their ideas into words that
+                <p class="hero-p-1" id="hero-user-p-tag-1">I help coaches, creators, and business owners turn their
+                    ideas into words that
                     sell.
                 </p>
-                <p class="hero-p-2" id="hero-user-p-tag-2">Confused about what to write in your DMs, bios, or captions? </p>
+                <p class="hero-p-2" id="hero-user-p-tag-2">Confused about what to write in your DMs, bios, or captions?
+                </p>
                 <p class="hero-p-3" id="hero-user-p-tag-3">Let's build words that work — together.</p>
             </div>
 
@@ -113,7 +112,8 @@
                 <div class="about-text-up">
                     <h2 class="">ABOUT ME</h2>
                     <h5 id="about-me-hfive-tag">Our Story and Vision</h5>
-                    <p id="about-me-first-box-p-tag">We are a team dedicated to delivering excadipisicing elit. A aperiam soluta praesentium
+                    <p id="about-me-first-box-p-tag">We are a team dedicated to delivering excadipisicing elit. A
+                        aperiam soluta praesentium
                         saepe?
                         autem placeat, illum similique dolore cadipisicing elit. A aperiam soluta praesentium saepe?
                         Iste molestiae dolorum quod provident eeptional results with integrity and creativity.</p>
@@ -122,12 +122,14 @@
                 <div class="about-us-img-top1">
 
                     <div class="about-img-1">
-                        <img id="about-us-boxtwo-img" src="https://cdn.pixabay.com/photo/2025/08/26/20/39/halloween-9798744_640.jpg"
+                        <img id="about-us-boxtwo-img"
+                            src="https://cdn.pixabay.com/photo/2025/08/26/20/39/halloween-9798744_640.jpg"
                             loading="lazy" alt="Image">
                     </div>
 
                     <h4 class="slide-bottom" id="about-us-hfour-tag-first">Our Vision</h4>
-                    <p id="about-me-second-box-p-tag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A aperiam soluta praesentium saepe?
+                    <p id="about-me-second-box-p-tag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                        aperiam soluta praesentium saepe?
                         Iste molestiae dolorum quod provident et, sequi nobis delectus? Mollitia nostrum aliquid
                         autem placeat, illum similique dolore cum soluta eum, quia rem non esse accusamus
                         dignissimos consequuntur, ad adipisci temporibus tenetur a doloremque facilis, quisquam
@@ -136,12 +138,14 @@
                 </div>
 
                 <div class="about-us-img-top2">
-                    <div class="about-img-2" >
-                        <img id="about-us-boxthree-img" src="https://cdn.pixabay.com/photo/2025/06/10/09/26/cliffs-9651766_640.png" loading="lazy"
+                    <div class="about-img-2">
+                        <img id="about-us-boxthree-img"
+                            src="https://cdn.pixabay.com/photo/2025/06/10/09/26/cliffs-9651766_640.png" loading="lazy"
                             alt="Image">
                     </div>
                     <h4 class="slide-bottom" id="about-us-hfour-tag-second">Our Values</h4>
-                    <p id="about-me-third-box-p-tag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti obcaecati, nobis
+                    <p id="about-me-third-box-p-tag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+                        obcaecati, nobis
                         repudiandae eveniet ab praesentium eos iste voluptatum atque? Ipsa corporis quia vero
                         numquam quas, animi dignissimos id. Inventore, hic.
                     </p>
@@ -163,21 +167,24 @@
 
         <div class="section-cards slide-right">
             <div class="section-card">
-                <i id="skill-icon-first-box" class="fa-solid fa-cart-shopping"></i>
+                 <img src="/svg-icons/envelope-svgrepo-com.svg" alt="Cart Icon" class="icon">
                 <h4 id="skill-hfour-tag-first">Sales Copywriting</h4>
-                <p id="skill-hp-tag-first">Writes persuasive product descriptions and landing pages that drive purchases.</p>
+                <p id="skill-hp-tag-first">Writes persuasive product descriptions and landing pages that drive
+                    purchases.</p>
             </div>
 
             <div class="section-card">
-                <i id="skill-icon-second-box" class="fa-solid fa-envelope"></i>
+                 <img src="/svg-icons/box-svgrepo-com.svg" alt="Cart Icon" class="icon">
                 <h4 id="skill-hfour-tag-second">Email Marketing</h4>
-                <p id="skill-hp-tag-second">Crafts automated email sequences for lead nurturing and product launches.</p>
+                <p id="skill-hp-tag-second">Crafts automated email sequences for lead nurturing and product launches.
+                </p>
             </div>
 
             <div class="section-card">
-                <i id="skill-icon-third-box" class="fa-solid fa-magnifying-glass"></i>
+                 <img src="/svg-icons/magnifying-glass-svgrepo-com.svg" alt="Cart Icon" class="icon">
                 <h4 id="skill-hfour-tag-third">SEO Writing</h4>
-                <p id="skill-hp-tag-third">Creates keyword-optimized blog content that ranks and brings in organic traffic.</p>
+                <p id="skill-hp-tag-third">Creates keyword-optimized blog content that ranks and brings in organic
+                    traffic.</p>
             </div>
 
 
@@ -196,22 +203,25 @@
         <article class="project">
 
             <h4 class="project-h4" id="project-hfourtag-first">Product Launch Landing Page</h4>
-            <p class="project-p"  id="project-ptag-first">Wrote a high-converting landing page for a tech startup's new product — helped
+            <p class="project-p" id="project-ptag-first">Wrote a high-converting landing page for a tech startup's new
+                product — helped
                 increase their signups by 35% in 2 weeks.</p>
         </article>
 
 
 
         <article class="project">
-            <h4 class="project-h4"  id="project-hfourtag-second">Email Funnel for Online Course</h4>
-            <p class="project-p" id="project-ptag-second">Designed a 7-email sequence for a fitness coach, resulting in 15% more course
+            <h4 class="project-h4" id="project-hfourtag-second">Email Funnel for Online Course</h4>
+            <p class="project-p" id="project-ptag-second">Designed a 7-email sequence for a fitness coach, resulting in
+                15% more course
                 sales.</p>
         </article>
 
 
         <article class="project">
             <h4 class="project-h4" id="project-hfourtag-third">SEO-Optimized Blog Series</h4>
-            <p class="project-p" id="project-ptag-third">created a 5-part blog series for a real estate brand, helping them rank on Google's
+            <p class="project-p" id="project-ptag-third">created a 5-part blog series for a real estate brand, helping
+                them rank on Google's
                 front page for two keywords.</p>
         </article>
 
@@ -219,7 +229,7 @@
 
         <div id="btn-2" class="hero-cta-2" id="project-button-cta">
             <div class="hero-second-div">
-                <div class="hero-button" ><a href="https://www.instagram.com/mrxcodes?igsh=ZDAxYm9paTJ1NzIx">
+                <div class="hero-button"><a href="https://www.instagram.com/mrxcodes?igsh=ZDAxYm9paTJ1NzIx">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -251,14 +261,16 @@
         <div class="case-grid">
             <!-- Top Left Image -->
             <div class="case-image">
-                <img id="case-study-img-first" src="https://cdn.pixabay.com/photo/2019/03/01/18/32/night-4028339_640.jpg" alt="Case Study Image">
+                <img id="case-study-img-first"
+                    src="https://cdn.pixabay.com/photo/2019/03/01/18/32/night-4028339_640.jpg" alt="Case Study Image">
             </div>
 
             <!-- Top Right Text -->
             <div class="case-text">
                 <h3 id="case-study-hthree-first">Empowering Access to Fresh Produce</h3>
                 <h4 id="case-study-hfour-first">Problem</h4>
-                <p id="case-study-hp-first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium excepturi ab, sunt in saepe
+                <p id="case-study-hp-first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium
+                    excepturi ab, sunt in saepe
                     architecto dolores quos alias earum ipsam obcaecati vel natus, porro tempora doloribus,
                     inventore voluptate? Quidem, voluptas.
                     Nostrum adipisci tenetur dolor excepturi recusandae iste? Nisi, quam suscipit? Sunt quos,
@@ -273,7 +285,8 @@
             <div class="case-text tall">
                 <h3 id="case-study-hthree-second">Streamline remote hiring</h3>
                 <h4 id="case-study-four-second">Problem</h4>
-                <p id="case-study-hp-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere culpa magni saepe natus impedit
+                <p id="case-study-hp-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere culpa magni
+                    saepe natus impedit
                     numquam nihil quis rem ex ipsum, beatae voluptas molestias sint esse molestiae debitis
                     asperiores minus fuga.
                     Deleniti numquam veritatis quisquam odit libero architecto hic vero rem nam fugiat. Minus, ab!
@@ -286,7 +299,8 @@
 
             <!-- Bottom Right Image -->
             <div class="case-image short">
-                <img id="case-study-img-second" src="https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_640.jpg" alt="Case Study Image">
+                <img id="case-study-img-second"
+                    src="https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_640.jpg" alt="Case Study Image">
             </div>
         </div>
     </section>
@@ -317,7 +331,8 @@
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
                 <blockquote>
-                    <p id="testimonial-ptag-blackquote-first">Jacks copy does not just sound good — it sells. We saw a 30% jump in conversions after using
+                    <p id="testimonial-ptag-blackquote-first">Jacks copy does not just sound good — it sells. We saw a
+                        30% jump in conversions after using
                         his landing page for our app launch.</p>
                 </blockquote>
 
@@ -339,7 +354,8 @@
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
                 <blockquote>
-                    <p id="testimonial-ptag-blackquote-second">His email sequences feel like they were written by someone who truly understands human
+                    <p id="testimonial-ptag-blackquote-second">His email sequences feel like they were written by
+                        someone who truly understands human
                         behavior. I had more replies in 3 days than in the last 3 months!</p>
                 </blockquote>
 
@@ -361,7 +377,8 @@
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
                 <blockquote>
-                    <p id="testimonial-ptag-blackquote-third">As a founder, SEO takes a backseat — but Jack made it effortless. His blog content brought in
+                    <p id="testimonial-ptag-blackquote-third">As a founder, SEO takes a backseat — but Jack made it
+                        effortless. His blog content brought in
                         over 1,200 organic visitors in just a month.</p>
                 </blockquote>
 
@@ -457,7 +474,8 @@
         <h3 id="final-cta-hthree-tag">The Portfolio you've been dreaming of is just one click away</h3>
 
         <div id="btn-f-1" class="hero-f-cta">
-            <a href="https://www.instagram.com/mrxcodes?igsh=ZDAxYm9paTJ1NzIx" class="bt4" id="final-cta-button-text">Let's go for Call</a>
+            <a href="https://www.instagram.com/mrxcodes?igsh=ZDAxYm9paTJ1NzIx" class="bt4"
+                id="final-cta-button-text">Let's go for Call</a>
         </div>
 
     </section>

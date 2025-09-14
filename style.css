@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 
 
 * {
@@ -900,14 +901,12 @@ main {
 .section-card:hover {
     transform: translateY(-7px);
 }
-
-.section-card i {
-    color: #ffffff;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.section-card .icon {
+    width: 60px;      /* same as your old font-size */
+    height: 60px;
+    display: block;
+    margin: 0 auto 20px auto; /* centers the icon and keeps bottom spacing */
+    filter: invert(1); /* makes icon white if SVG is black */
 }
 
 .section-card h4 {
