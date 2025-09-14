@@ -16,7 +16,7 @@
 
     <!-- Background Video with poster for instant LCP -->
     <video class="bg-video" autoplay muted loop playsinline preload="none" poster="/assets/background-preview.webp">
-        <source src="assets/background-vd.mp4" type="video/mp4"> <!-- Empty at first -->
+        <source src="./assets/background-vd.mp4" type="video/mp4"> <!-- Empty at first -->
         Your browser does not support the video tag.
     </video>
 
@@ -34,7 +34,7 @@
                     <li class="nav-text-li"><a href="#my-projects">PROJECTS</a></li>
                 </ul>
 
-                <div class="container-button" class="slide-left">
+                <div class="container-button slide-left">
                     <a href="https://www.instagram.com/mrxcodes?igsh=ZDAxYm9paTJ1NzIx" class="button">
                         <div class="button__content">
                             <span class="button__text">CONTACT</span>
@@ -44,12 +44,13 @@
                             <div class="button__reflection-2"></div>
                         </div>
 
-                        <img src="/assets/star.png" alt="slr" class="button__star-1">
-                        <img src="/assets/star.png" alt="slr" class="button__star-2">
-                        <img src="/assets/circle.png" alt="slr" class="button__circle-1">
-                        <img src="/assets/circle.png" alt="slr" class="button__circle-2">
-                        <img src="/assets/triangle.png" alt="slr" class="button__diamond">
-                        <img src="/assets/diamond.png" alt="slr" class="button__triangle">
+                        <!-- Correct relative paths -->
+                        <img src="./assets/star.png" alt="star" class="button__star-1">
+                        <img src="./assets/star.png" alt="star" class="button__star-2">
+                        <img src="./assets/circle.png" alt="circle" class="button__circle-1">
+                        <img src="./assets/circle.png" alt="circle" class="button__circle-2">
+                        <img src="./assets/triangle.png" alt="triangle" class="button__triangle">
+                        <img src="./assets/diamond.png" alt="diamond" class="button__diamond">
 
                         <div class="button__shadow"></div>
                     </a>
@@ -167,21 +168,21 @@
 
         <div class="section-cards slide-right">
             <div class="section-card">
-                 <img src="svg-icons/envelope-svgrepo-com.svg" alt="Cart Icon" class="icon">
+                <img src="svg-icons/envelope-svgrepo-com.svg" alt="Cart Icon" class="icon">
                 <h4 id="skill-hfour-tag-first">Sales Copywriting</h4>
                 <p id="skill-hp-tag-first">Writes persuasive product descriptions and landing pages that drive
                     purchases.</p>
             </div>
 
             <div class="section-card">
-                 <img src="svg-icons/box-svgrepo-com.svg" alt="Cart Icon" class="icon">
+                <img src="svg-icons/box-svgrepo-com.svg" alt="Cart Icon" class="icon">
                 <h4 id="skill-hfour-tag-second">Email Marketing</h4>
                 <p id="skill-hp-tag-second">Crafts automated email sequences for lead nurturing and product launches.
                 </p>
             </div>
 
             <div class="section-card">
-                 <img src="svg-icons/magnifying-glass-svgrepo-com.svg" alt="Cart Icon" class="icon">
+                <img src="svg-icons/magnifying-glass-svgrepo-com.svg" alt="Cart Icon" class="icon">
                 <h4 id="skill-hfour-tag-third">SEO Writing</h4>
                 <p id="skill-hp-tag-third">Creates keyword-optimized blog content that ranks and brings in organic
                     traffic.</p>
@@ -400,7 +401,7 @@
         <div class="faq active">
             <button class="according" id="faq-button-text-first">
                 What makes me standout??
-                <i class="fa-solid fa-chevron-down"></i>
+                <img src="./svg-icons/chevron-down-svgrepo-com.svg" alt="expand" class="faq-chevron">
             </button>
             <div class="panel">
                 <p id="faq-ptag-first">
@@ -414,6 +415,7 @@
         <div class="faq active">
             <button class="according" id="faq-button-text-second">
                 Lorem ipsum dolor sit amet.
+                <img src="./svg-icons/chevron-down-svgrepo-com.svg" alt="expand" class="faq-chevron">
             </button>
             <div class="panel">
                 <p id="faq-ptag-second">
@@ -426,9 +428,8 @@
 
         <div class="faq active">
             <button class="according" id="faq-button-text-third">
-
                 Lorem ipsum dolor sit amet consectetur.
-                <i class="fa-solid fa-chevron-down"></i>
+                <img src="./svg-icons/chevron-down-svgrepo-com.svg" alt="expand" class="faq-chevron">
             </button>
             <div class="panel">
                 <p id="faq-ptag-third">
@@ -441,7 +442,7 @@
         <div class="faq active">
             <button class="according" id="faq-button-text-fourth">
                 Lorem ipsum dolor sit amet consectetur adipisicing.
-                <i class="fa-solid fa-chevron-down"></i>
+                <img src="./svg-icons/chevron-down-svgrepo-com.svg" alt="expand" class="faq-chevron">
             </button>
             <div class="panel">
                 <p id="faq-ptag-fourth">
@@ -455,7 +456,7 @@
         <div class="faq active">
             <button class="according" id="faq-button-text-fifth">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <i class="fa-solid fa-chevron-down"></i>
+                <img src="./svg-icons/chevron-down-svgrepo-com.svg" alt="expand" class="faq-chevron">
             </button>
             <div class="panel">
                 <p id="faq-ptag-fifth">

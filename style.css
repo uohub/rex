@@ -1233,9 +1233,6 @@ blockquote p {
     border-radius: 12px;
 }
 
-.according i {
-    font-size: var(--font-size-h4);
-}
 
 .active,
 .according:hover {
@@ -1250,6 +1247,15 @@ blockquote p {
     overflow: hidden;
     display: none;
     transition: .4s ease;
+}
+.faq-chevron {
+    width: 30px;              /* adjust size */
+    height: auto;             /* keeps proportion */
+    margin-left: 10px;        /* spacing from text */
+    transition: transform 0.3s ease; /* smooth rotation */
+    pointer-events: none;     /* so clicks go through */
+    vertical-align: middle;   /* align with text */
+    filter: invert(1);
 }
 
 .panel p {
