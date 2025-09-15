@@ -328,15 +328,23 @@
 @media (max-width: 999.98px) {
   .about-us-section-one {
     grid-template-columns: 1fr;
-
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
   .about-us-img-top1 p,
   .about-us-img-top2 p {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
+  }
+  .about-text-up h2{
+    font-size: var(--font-size-h1);
+  }
+  .about-text-up h5{
+    font-size: var(--font-size-h4);
+  }
+  .about-text-up p {
+    font-size: var(--font-size-sm);
   }
 
   #about-me {
